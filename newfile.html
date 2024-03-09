@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>CIEI Innovation Prediction Portal</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a href="https://datastudio.google.com/s/vKAFN4BoUXE" class="logo">Click to see Reports</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="https://ciei.co.in">CIEI Main Website</a></li>
+        <li><a href="https://datastudio.google.com/s/vKAFN4BoUXE">Click to see reports</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">CIEI Innovation Prediction</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the Score of Innovation based on our Parameters.
+        <br>
+        </h5>
+      </div>
+
+      <div class="row center">
+        <form action='/' method="post" class="col s12">
+
+          <div class="row center">
+
+            <div class="input-field col s12 m12 l6">
+              <label for="RTI"><b>No. of Webinars or Seminars Conducted Related to Innovation</b></label>
+              <br><br>
+              <input name="RTI" id="RTI" placeholder="Enter Numerical Value" type="text" class="validate" value= 6>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="RTS"><b>No. of Webinars or Seminars Conducted Related to Soft Skill</b></label>
+              <br><br>
+              <input id="RTS" name="RTS"  placeholder="Enter Numerical Value" type="text" class="validate" value =1>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+            <label for="RTE"><b>No. of Webinars / Seminars Conducted Related to Entrepreneurship</b></label>
+            <br><br>
+            <input id="RTE" name="RTE" placeholder="Enter Numerical Value" type="text" class="validate" value =1>
+          </div>
+
+            <div class="input-field col s12 m12 l6">
+            <label for="NNCOP"><b> No. of National Level Conferences Organized or Participated </b></label>
+            <br><br>
+            <input id="NNCOP" name="NNCOP" placeholder="Enter Numerical Value" type="text" class="validate" value =1>
+          </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="NICOP"><b> No. of Inter National Level Conferences Organized or Participated</b></label>
+              <br><br>
+              <input id="NICOP" name="NICOP" placeholder="Enter Numerical Value" type="text" class="validate" value =3>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="NPPFSC"><b>No. of Platforms Provided Free Access to Online Courses :</b></label>
+              <br><br>
+              <input id="NPPFSC" name="NPPFSC" placeholder="Excluding NPTEL, SWAYAM" type="text" class="validate" value =6>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="NPPFRR"><b>No. of platforms provided free access to research resources</b></label>
+                <br><br>
+              <input id="NPPFRR" name="NPPFRR" placeholder="E.g. Research Gate, Mendeley, Google Scholar, etc." type="text" class="validate" value =6>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="FDP"><b> Number of faculty development programmes </b></label>
+              <br><br>
+              <input name="FDP" id="FDP" placeholder="Enter Numerical Value" type="text" class="validate" value =3 >
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="RPPS"><b>No. of Research Papers Published by Students</b></label>
+              <br><br>
+              <input id="RPPS" name="RPPS" placeholder="Enter Numerical Value"  type="text" class="validate" value =3>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="RPPF"><b>No. of Research Papers Published by Faculties</b></label>
+              <br><br>
+              <input id="RPPF" name="RPPF" placeholder="Enter Numerical Value"  type="text" class="validate" value =8>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="NSDPEGI"><b> No. of skill development programs organized by Govt. External Institutions </b></label>
+              <br><br>
+              <input id="NSDPEGI" name="NSDPEGI" placeholder="Enter Numerical Value" type="text" class="validate" value =4>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="NSDPEPI"><b> No. of skill development programs organized by Pvt. External Institutions </b></label>
+              <br><br>
+              <input id="NSDPEPI" name="NSDPEPI" placeholder="Enter Numerical Value" type="text" value =4>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="FPG"><b>Does the Institution / University get funded by Govt. </b></label><br><br>
+              <input list="FPG" id="FPGG" name="FPG" placeholder="Click here to select your answer"/>
+                <datalist id="FPG">
+                  <option>Yes</option>
+                  <option>No</option>
+                </datalist>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="FPP"><b>Does the Institution / University get funded by Pvt. </b></label><br><br>
+              <input list="FPP" id="FPPP" name="FPP" placeholder="Click here to select your answer"/>
+                <datalist id="FPP">
+                  <option>Yes</option>
+                  <option>No</option>
+                </datalist>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="PICES"><b> Presence of Incubation cells / Entrepreneurship societies </b></label><br><br>
+              <input list="PICES" id="PICESS" name="PICES" placeholder="Click here to select your answer"/>
+                <datalist id="PICES">
+                  <option>Yes</option>
+                  <option>No</option>
+                </datalist>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="NPIESC"><b>No. of participation's by students in Internal/External Startup Ideation Competitions.</b></label>
+              <br><br>
+              <input id="NPIESC" name="NPIESC"  type="text" class="validate" value =5>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="NSD"><b>No. of Startups Drafted or Proposed</b></label>
+              <br><br>
+              <input name="NSD" id="NSD" placeholder="Enter Numerical Value" type="text" class="validate" value =48>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="NSL"><b>No. of Startups Launched</b></label>
+              <br><br>
+              <input name="NSL" id="NSL" placeholder="Enter Numerical Value" type="text" class="validate" value =48>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="NSSI"><b>No. of startup ideas supported by investors</b></label>
+              <br><br>
+              <input name="NSSI" id="NSSI" placeholder="Enter Numerical Value" type="text" class="validate" value =9>
+            </div>
+
+            <div class="input-field col s12 m12 l6">
+              <label for="NPF"><b>No. of Patents Filed </b></label>
+              <br><br>
+              <input name="NPF" id="NPF" placeholder="Enter Numerical Value" type="text" class="validate" value =4>
+            </div>
+
+          </div>
+
+          <div class="row center">
+
+            <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+          </div>
+      </form>
+
+      </div>
+      <div class="row center">
+        <p> {{'PREDICTED SCORE : ', prediction}}</p>
+      </div>
+
+
+    </div>
+  </div>
+
+
+    <br><br>
+
+
+  <footer class="page-footer orange">
+    <div class ="row center">
+    <div class="footer-copyright">
+      <div class="container">
+      Proprietary Content © <a class="orange-text text-lighten-3" href="https://ciei.co.in"><b>Chamber of Innovators and Entrepreneurs in India (CIEI).</b>Unauthorized Use and Distribution Prohibited.</a>
+        <br> Designed and Developed by <a class="orange-text text-lighten-3" href="https://www.linkedin.com/in/sumitkumarshukla/">Sumit Kumar Shukla for CIEI.</a>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+
